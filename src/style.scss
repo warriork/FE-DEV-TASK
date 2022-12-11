@@ -1,0 +1,25 @@
+$white: #FFFFFF;
+$black: #2F3740;
+$redDark: #F58989;
+$red: #F58A8A;
+$green: #6A7685;
+$wrapper-background: #616A92;
+$border-color: #EAEFF9;
+$breakpoint: 375px;
+
+.wrapper {
+    margin: 25px auto;
+    padding: 40px 30px 30px 0;
+    width: calc(100vw - 400px);
+    height: calc(100vh - 50px);
+    background-color: $white;
+    border: 1px solid $border-color;
+    border-radius: 35px;
+    @media screen and (max-width: $breakpoint){
+        margin:0;
+        padding:0;
+        border-radius: 0;
+
+    }
+  }
+
