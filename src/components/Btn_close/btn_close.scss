@@ -1,0 +1,60 @@
+@use '../../variables';
+
+.btn-wrapper {
+  box-sizing: border-box;
+  position: absolute;
+  top: -15px;
+  right:-15px;
+    @media screen and (max-width: variables.$breakpoint){
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      top:0;
+      left:0;
+      width:100vw;
+      height: 50px;
+      border: variables.$border;
+  
+  }
+}
+.h1 {
+  display: none;
+  @media screen and (max-width: variables.$breakpoint){
+display: block;
+font-size: 18px;
+color: variables.$black;
+font-weight: 700;
+align-self: center;
+margin: 0 auto;
+  }
+}
+.button-close {
+  position: relative;
+    height: 50px;
+    width:50px;
+    background: variables.$white;
+    border: variables.$border;
+    border-radius: 50%;
+    box-shadow: variables.$box-shadow;
+    @media screen and (max-width: variables.$breakpoint){
+      border: none;
+      border-radius: none;
+      box-shadow: none;
+    }
+    &:before, &:after {
+      position: absolute;
+      left: 23px;
+      top: 15px;
+      content: ' ';
+      height: 20px;
+      width: 2px;
+      background-color: #A0AEBD;
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    } 
+  }
+
