@@ -13,7 +13,7 @@ export const App = () => {
     return (
 <div className='wrapper'>
 <Btn_close/>
-<Navbar filter={filter}/>
+<Navbar filter={filter} setFilter={setFilter}/>
 </div>
     )
 }
