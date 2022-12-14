@@ -1,6 +1,6 @@
-import React from 'react'
 import './categories.scss'
 import { useState } from 'react'
+import React from 'react'
 
 export const Categories = () => {
   const [isDisabled, setDisabled] = useState(false)
