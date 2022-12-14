@@ -3,6 +3,7 @@
    
     @media screen and (max-width: variables.$breakpoint){
         width: 100vw;
+        overflow-y: scroll;
     }
 }
 .product-filter-wrapper {
@@ -13,6 +14,9 @@
     width: calc(100vw - 220px);
 overflow-y: scroll;
   }
+  @media screen and (max-width: variables.$breakpoint){
+    width: 550px;
+}
 }
 .product-filter-option {
     height:115px;
