@@ -18,8 +18,8 @@ export const Navbar = (props:Props) => {
         className={props.filter === 'oblibene' ? 'nav_active nav_filter' : 'nav_filter' }
         onClick={()=>props.setFilter('oblibene')}>Oblíbené</div>
         <div 
-        className={props.filter=== 'doporucene' ? 'nav_active nav_nav_filter' : 'nav_filter' }
-        onClick={()=>()=>props.setFilter('doporucene')}>Doporučené</div>
+        className={props.filter=== 'doporucene' ? 'nav_active nav_filter' : 'nav_filter' }
+        onClick={()=>props.setFilter('doporucene')}>Doporučené</div>
     </nav>
 )
 }
